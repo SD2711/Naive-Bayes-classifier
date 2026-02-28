@@ -34,7 +34,7 @@ gnb = GaussianNB()
 y_pred = gnb.fit(X_train, y_train).predict(X_test)
 
 print(
-    "Number of mislabeled points out of a total %d points : %d"
+    "Количество неправильно классифицированных точек из общего числа %d точек: %d"
     % (X_test.shape[0], (y_test != y_pred).sum())
 )
 print(y_pred)
